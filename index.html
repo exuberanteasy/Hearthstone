@@ -1,0 +1,446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>試作</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+
+
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<!--
+<link rel="stylesheet" href="jqm/css/jquery.mobile.custom.structure.min.css"/>
+<link rel="stylesheet" href="jqm/css/jquery.mobile.custom.theme.min.css"/>
+<script src="jqm/js/jquery-2.1.4.min.js"></script>
+<script src="jqm/js/jquery.mobile.custom.min.js"></script>
+-->
+
+</head>
+
+<body>
+<!--
+<div data-role="page" data-add-back-btn="true" data-back-btn-text="Back">
+	<div data-role="header">
+    	<h1>標題</h1>
+    </div>
+    
+</div>
+-->
+<br />
+	
+<label for="select-choice-11" class="select">Multi-select with optgroups, custom icon and position:</label>
+<select name="select-choice-11" id="select-choice-11" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
+    <option>Choose a few options:</option>
+    <optgroup label="職業">
+        <option value="arfsfd">中立</option>
+        <option value="sdfsfg">獵人</option>
+        <option value="express">法師</option>
+        <option value="dgfhsdf">聖騎</option>
+        <option value="Priest">牧師</option>
+        <option value="sdef">薩滿</option>
+        <option value="ovedfgt">戰士</option>
+        <option value="oeswright">德魯伊</option>
+    </optgroup>
+    <!--
+    <optgroup label="水晶">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7+</option>
+    </optgroup>
+    -->
+</select>
+
+<ul data-role="listview" data-inset="true" data-filter="true">
+	   
+    <li>
+    <a href="#popupDialog-01" id="Priest" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb01.jpg" />憤怒雞</a>
+    </li>
+    <div data-role="popup" id="popupDialog-01" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>憤怒雞</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb01.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+    <li>
+    <a href="#popupDialog-02" id="Priest" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb02.jpg" />巫師的學徒</a>
+    </li>
+	<div data-role="popup" id="popupDialog-02" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>巫師的學徒</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb02.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+    <li>
+    <a href="#popupDialog-03" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb03.jpg" />護盾小機器人</a>
+    </li>
+    <div data-role="popup" id="popupDialog-03" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>護盾小機器人</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb03.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+    <li>
+    <a href="#popupDialog-04" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb04.jpg" />練習夥伴</a>
+    </li>
+    <div data-role="popup" id="popupDialog-04" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>練習夥伴</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb04.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+    <li>
+    <a href="#popupDialog-05" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb05.jpg" />達納蘇斯志士</a>
+    </li>
+    <div data-role="popup" id="popupDialog-05" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>達納蘇斯志士</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb05.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+    <li>
+    <a href="#popupDialog-06" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb06.jpg" />探險者之帽</a>
+    </li>
+    <div data-role="popup" id="popupDialog-06" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>探險者之帽</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb06.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+    <li>
+    <a href="#popupDialog-07" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb07.jpg" />博物館館長</a>
+    </li>
+    <div data-role="popup" id="popupDialog-07" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>博物館館長</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb07.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+    <li>
+    <a href="#popupDialog-08" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb08.jpg" />布萊恩 銅鬚</a>
+    </li>
+    <div data-role="popup" id="popupDialog-08" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>布萊恩 銅鬚</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb08.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+    <li>
+    <a href="#popupDialog-09" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb09.jpg" />黑市商人</a>
+    </li>
+    <div data-role="popup" id="popupDialog-09" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>黑市商人</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb09.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+    <li>
+    <a href="#popupDialog-10" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb10.jpg" />迅猛龍坐騎</a>
+    </li>
+    <div data-role="popup" id="popupDialog-10" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>迅猛龍坐騎</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb10.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+    <li>
+    <a href="#popupDialog-11" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb11.jpg" />戰歌指揮官</a>
+    </li>
+    <div data-role="popup" id="popupDialog-11" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>戰歌指揮官</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb11.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+    <li>
+    <a href="#popupDialog-12" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb12.jpg" />軍情七處密探</a>
+    </li>
+    <div data-role="popup" id="popupDialog-12" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>軍情七處密探</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb12.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+    <li>
+    <a href="#popupDialog-13" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb13.jpg" />全面備戰</a>
+    </li>
+    <div data-role="popup" id="popupDialog-13" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>全面備戰</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb13.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+    <li>
+    <a href="#popupDialog-14" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb14.jpg" />爆炸陷阱</a>
+    </li>
+    <div data-role="popup" id="popupDialog-14" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>爆炸陷阱</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb14.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+    <li>
+    <a href="#popupDialog-15" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb15.jpg" />長鬃草原獅</a>
+    </li>
+    <div data-role="popup" id="popupDialog-15" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>長鬃草原獅</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb15.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+	<li>
+    <a href="#popupDialog-16" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb16.jpg" />喚霧者</a>
+    </li>
+    <div data-role="popup" id="popupDialog-16" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>喚霧者</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb16.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+	<li>
+    <a href="#popupDialog-17" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb17.jpg" />爆爆博士</a>
+    </li>
+    <div data-role="popup" id="popupDialog-17" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>爆爆博士</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb17.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+	<li>
+    <a href="#popupDialog-18" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb18.jpg" />烈焰風暴</a>
+    </li>
+    <div data-role="popup" id="popupDialog-18" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>烈焰風暴</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb18.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+	<li>
+    <a href="#popupDialog-19" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb19.jpg" />機器熊-貓</a>
+    </li>
+    <div data-role="popup" id="popupDialog-19" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>機器熊-貓</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb19.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+	<li>
+    <a href="#popupDialog-1" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb20.jpg" />神秘挑戰者</a>
+    </li>
+    <div data-role="popup" id="popupDialog-1" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>神秘挑戰者</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb20.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+	<li>
+    <a href="#popupDialog-21" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb21.jpg" />聖光炸彈</a>
+    </li>
+    <div data-role="popup" id="popupDialog-21" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>聖光炸彈</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb21.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+	<li>
+    <a href="#popupDialog-22" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb22.jpg" />提里奧 弗丁</a>
+    </li>
+    <div data-role="popup" id="popupDialog-22" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>提里奧 弗丁</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb22.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+	<li>
+    <a href="#popupDialog-23" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb23.jpg" />預言者費倫</a>
+    </li>
+    <div data-role="popup" id="popupDialog-23" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>預言者費倫</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb23.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+	<li>
+    <a href="#popupDialog-24" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb24.jpg" />飛斧投擲者</a>
+    </li>
+    <div data-role="popup" id="popupDialog-24" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>飛斧投擲者</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb24.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+	<li>
+    <a href="#popupDialog-25" data-rel="popup" data-position-to="window" data-transition="pop"
+class="ui-btn"><img src="jqm/css/images/thumb25.jpg" />黏黏有魚</a>
+    </li>
+    <div data-role="popup" id="popupDialog-25" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+        <div data-role="header" data-theme="a">
+            <h1>黏黏有魚</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <img src="jqm/css/images/thumb25.jpg" />
+            <br />
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+        </div>
+	</div>
+    
+</ul>
+
+	
+
+
+
+</body>
+</html>
